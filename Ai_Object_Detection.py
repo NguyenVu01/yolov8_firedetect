@@ -32,7 +32,7 @@ zone_polygon_m = np.array([[160, 100],
                          [481, 100]], dtype=np.int32)
 @st.cache_resource
 def load_yolo_model():
-    return YOLO("best.pt")
+    return YOLO("best-800.pt")
 
 # Load the YOLO model (this will be cached)
 model = load_yolo_model()

@@ -22,8 +22,6 @@ from streamlit_webrtc import (
 )
 import supervision as sv
 import numpy as np
-import pygame
-from pygame import mixer
 import time
 
 # Initialize pygame mixer

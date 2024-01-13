@@ -203,15 +203,6 @@ def main():
 
                 st.warning("Warning: High fire risk detected!")
 
-                audio_file_path = "./audio/warning.mp3"
-                audio_bytes = open(audio_file_path, "rb").read()
-                st.audio(audio_bytes, format="audio/mp3")
-
-                pygame.mixer.music.load(audio_file_path)
-                pygame.mixer.music.play()
-                while pygame.mixer.music.get_busy():
-                    time.sleep(0.1)
-
             # Convert the frame back to av.VideoFrame
             annotated_frame = av.VideoFrame.from_ndarray(annotated_frame1, format="bgr24")
             # Display the annotated frame using st.image
@@ -277,15 +268,6 @@ def main():
                 st.success('Done!')
 
                 st.warning("Warning: High fire risk detected!")
-
-                audio_file_path = "./audio/warning.mp3"
-                audio_bytes = open(audio_file_path, "rb").read()
-                st.audio(audio_bytes, format="audio/mp3")
-
-                pygame.mixer.music.load(audio_file_path)
-                pygame.mixer.music.play()
-                while pygame.mixer.music.get_busy():
-                    time.sleep(0.1)
 
             # Convert the frame back to av.VideoFrame
             annotated_frame = av.VideoFrame.from_ndarray(annotated_frame1, format="bgr24")

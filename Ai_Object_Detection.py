@@ -24,9 +24,6 @@ import supervision as sv
 import numpy as np
 import time
 
-# Initialize pygame mixer
-mixer.init()
-
 
 # Define the zone polygon
 zone_polygon_m = np.array([[160, 100], 
